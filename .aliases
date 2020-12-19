@@ -1,0 +1,28 @@
+alias ls="ls --color=auto"
+alias ll="ls -hAl"
+alias cp="cp -i"
+alias tree="tree -a"
+
+alias cb="xclip -selection c"
+
+alias tb="nc termbin.com 9999"
+
+alias pacsearch="pacman -Ss"
+alias pacupdate="sudo pacman -Syyu"
+alias pacinstall="sudo pacman -S"
+alias pacremove="sudo pacman -Runs"
+
+alias s="sudo systemctl"
+
+alias fw="sudo ufw"
+
+alias v="$EDITOR"
+
+alias tmux="tmux -2"
+
+function aur {
+    cd $HOME/aur
+    git clone https://aur.archlinux.org/${1}.git
+    cd $1
+    bat PKGBUILD
+}
