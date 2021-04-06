@@ -1,0 +1,24 @@
+stty -ixon # disable ctrl-s and ctrl -q
+
+PATH=$PATH:$HOME/bin:$HOME/go/bin
+LANG=en_GB.UTF-8
+EDITOR=nvim
+DIFFPROG="nvim -d"
+MYVIMRC="$HOME/.config/nvim/init.vim"
+BAT_THEME=TwoDark
+export NNN_BMS='d:~/dl'
+export NNN_COLORS='4235'
+export NNN_TRASH=2
+export NNN_PLUG='t:treeview'
+
+alias grep="grep --color=auto"
+alias ls="ls --color=auto"
+alias ll="ls -hAl"
+alias cp="cp -i"
+alias tree="tree -a"
+alias s="sudo systemctl"
+alias fw="sudo ufw"
+alias cb="xclip -selection c"
+alias tb="nc termbin.com 9999"
+alias checkwg="curl https://am.i.mullvad.net/connected"
+
