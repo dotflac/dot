@@ -20,5 +20,5 @@ alias s="sudo systemctl"
 alias fw="sudo ufw"
 alias cb="xclip -selection c"
 alias tb="nc termbin.com 9999"
-alias checkwg="curl https://am.i.mullvad.net/connected"
+alias mullvad="curl https://am.i.mullvad.net/connected"
 
